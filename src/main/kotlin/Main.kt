@@ -69,11 +69,10 @@ fun selectAddService(currentPizzaCity: PizzaCity ){
     when(currentPizzaCity){
         is PizzaVologda -> {
             currentPizzaCity.showCheckPhoto()
-            currentPizzaCity.drinkSale()
             currentPizzaCity.SouseSale()
         }
         is PizzaMoscow -> currentPizzaCity.showCheckPhoto()
-        is PizzaPeter -> currentPizzaCity.drinkSale()
+
     }
 
 }
